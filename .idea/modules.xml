@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/bank.api.module/bank.api.module.iml" filepath="$PROJECT_DIR$/bank.api.module/bank.api.module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/banking.app/banking.app.iml" filepath="$PROJECT_DIR$/banking.app/banking.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud.service.module/cloud.service.module.iml" filepath="$PROJECT_DIR$/cloud.service.module/cloud.service.module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dto.module/dto.module.iml" filepath="$PROJECT_DIR$/dto.module/dto.module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hello.modules/hello.modules.iml" filepath="$PROJECT_DIR$/hello.modules/hello.modules.iml" />
+      <module fileurl="file://$PROJECT_DIR$/impl.bank/impl.bank.iml" filepath="$PROJECT_DIR$/impl.bank/impl.bank.iml" />
+      <module fileurl="file://$PROJECT_DIR$/main.app/main.app.iml" filepath="$PROJECT_DIR$/main.app/main.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules-project.iml" filepath="$PROJECT_DIR$/modules-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service.api.module/service.api.module.iml" filepath="$PROJECT_DIR$/service.api.module/service.api.module.iml" />
+    </modules>
+  </component>
+</project>
