@@ -1,45 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e0f7050b-3d97-46c6-a10b-91ffebff183a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bank.api.module/bank.api.module.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bank.api.module/src/com/baeldung/modules/banking/bank/BankInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bank.api.module/src/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking.app/banking.app.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking.app/src/com/baeldung/modules/banking/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking.app/src/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud.service.module/cloud.service.module.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud.service.module/src/com/baeldung/modules/banking/cloud/service/ServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud.service.module/src/com/baeldung/modules/banking/cloud/service/service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud.service.module/src/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dto.module/dto.module.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dto.module/src/com/baeldung/modules/banking/dto/BankCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dto.module/src/com/baeldung/modules/banking/dto/BankCardType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dto.module/src/com/baeldung/modules/banking/dto/CreditBankCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dto.module/src/com/baeldung/modules/banking/dto/DebitBankCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dto.module/src/com/baeldung/modules/banking/dto/Subscription.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dto.module/src/com/baeldung/modules/banking/dto/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dto.module/src/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hello.modules/hello.modules.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hello.modules/src/com.baeldung.modules.hello/HelloModules.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hello.modules/src/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/impl.bank/impl.bank.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/impl.bank/src/com/baeldung/modules/banking/bank/impl/BankImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/impl.bank/src/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.app/main.app.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.app/src/com/baeldung/modules/banking/main/MainApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.app/src/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules-project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service.api.module/service.api.module.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service.api.module/src/com/baeldung/modules/banking/service/ServiceInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service.api.module/src/module-info.java" afterDir="false" />
-    </list>
+    <list default="true" id="e0f7050b-3d97-46c6-a10b-91ffebff183a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -130,6 +92,7 @@
       <updated>1670775797092</updated>
       <workItem from="1670775798366" duration="3437000" />
       <workItem from="1670779550359" duration="7841000" />
+      <workItem from="1670790748978" duration="334000" />
     </task>
     <servers />
   </component>

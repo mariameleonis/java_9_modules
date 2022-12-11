@@ -10,5 +10,7 @@
     <orderEntry type="module" module-name="impl.bank" />
     <orderEntry type="module" module-name="dto.module" />
     <orderEntry type="module" module-name="cloud.service.module" />
+    <orderEntry type="module" module-name="bank.api.module" />
+    <orderEntry type="module" module-name="service.api.module" />
   </component>
 </module>

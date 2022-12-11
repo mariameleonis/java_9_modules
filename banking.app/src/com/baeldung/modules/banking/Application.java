@@ -1,5 +1,10 @@
 package com.baeldung.modules.banking;
 
+import static com.baeldung.modules.banking.cloud.service.ServiceImpl.USERS;
+import static com.baeldung.modules.banking.cloud.service.ServiceImpl.USER_CHARLES;
+import static com.baeldung.modules.banking.cloud.service.ServiceImpl.USER_KELSEY;
+import static com.baeldung.modules.banking.cloud.service.ServiceImpl.USER_LISA;
+
 import com.baeldung.modules.banking.bank.impl.BankImpl;
 import com.baeldung.modules.banking.cloud.service.ServiceImpl;
 import com.baeldung.modules.banking.dto.BankCard;
@@ -20,9 +25,9 @@ public class Application {
   public static final Scanner SCANNER = new Scanner(System.in);
   public static final List<BankCard> CARDS = new ArrayList<>(
       Arrays.asList(
-          new DebitBankCard("1111", ServiceImpl.USER_CHARLES),
-          new CreditBankCard("2222", ServiceImpl.USER_LISA),
-          new DebitBankCard("3333", ServiceImpl.USER_KELSEY)));
+          new DebitBankCard("1111", USER_CHARLES),
+          new CreditBankCard("2222", USER_LISA),
+          new DebitBankCard("3333", USER_KELSEY)));
 
   public static void main(String[] args) {
     var sc = SCANNER;
@@ -72,7 +77,7 @@ public class Application {
   }
 
   private static void getUsers() {
-    ServiceImpl.USERS.forEach(user -> System.out.println(user.toString()));
+    USERS.forEach(user -> System.out.println(user.toString()));
   }
 
   private static void subscribeBankCard(String card_no) {
@@ -113,7 +118,7 @@ public class Application {
     }
     var bank = new BankImpl();
     var user = new User(name, surname, LocalDate.parse(birthday));
-    ServiceImpl.USERS.add(user);
+    USERS.add(user);
     var result = bank.createBankCard(user, type);
     CARDS.add(result);
     System.out.println("You successfully created new " + type.name() + " bank card. \nYour card no. " + result.getNumber());
