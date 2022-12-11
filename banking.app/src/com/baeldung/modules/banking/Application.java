@@ -29,7 +29,7 @@ public class Application {
           new CreditBankCard("2222", USER_LISA),
           new DebitBankCard("3333", USER_KELSEY)));
 
-  public static void main(String[] args) {
+  public static void main(String[] args) throws SubscriptionNotFoundException {
     var sc = SCANNER;
     int ch;
 
@@ -47,18 +47,12 @@ public class Application {
         case 2:
           System.out.print("Enter bank card no. you want to search: ");
           String card_no = sc.next();
+          var found = getSubscriptionByCardNumber(card_no).orElseThrow(
+              () -> new SubscriptionNotFoundException("Subscription not found"));
 
-
-            var found = getSubscriptionByCardNumber(card_no);
-            if (found.isPresent()) {
-              showSubscriptionDetails(found.get());
-              break;
-            }
-
-          if (found.isEmpty()) {
-            System.out.println("Search failed! Subscription doesn't exist..!!");
-          }
+          showSubscriptionDetails(found);
           break;
+
         case 3:
           System.out.print("Enter Bank Card no. : ");
           card_no = sc.next();

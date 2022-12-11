@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 public class ServiceImpl implements ServiceInterface {
 
@@ -38,6 +39,7 @@ public class ServiceImpl implements ServiceInterface {
 
   @Override
   public List<User> getAllUsers() {
-    return USERS;
+    return USERS.stream()
+    .collect(Collectors.toUnmodifiableList());
   }
 }
