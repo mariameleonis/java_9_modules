@@ -5,7 +5,9 @@ import static com.banking.service.impl.ServiceImpl.USER_CHARLES;
 import static com.banking.service.impl.ServiceImpl.USER_KELSEY;
 import static com.banking.service.impl.ServiceImpl.USER_LISA;
 
+import com.banking.api.BankInterface;
 import com.banking.api.impl.BankImpl;
+import com.banking.service.ServiceInterface;
 import com.banking.service.impl.ServiceImpl;
 import com.banking.dto.BankCard;
 import com.banking.dto.BankCardType;
@@ -19,6 +21,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 import java.util.Scanner;
+import java.util.ServiceLoader;
 import java.util.function.Predicate;
 
 public class Application {
@@ -29,6 +32,11 @@ public class Application {
           new DebitBankCard("1111", USER_CHARLES),
           new CreditBankCard("2222", USER_LISA),
           new DebitBankCard("3333", USER_KELSEY)));
+  public static final ServiceInterface SERVICE = ServiceLoader.load(ServiceInterface.class)
+      .iterator().next();
+
+  public static final BankInterface BANK = ServiceLoader.load(BankInterface.class)
+      .iterator().next();
 
   public static void main(String[] args) throws SubscriptionNotFoundException {
     var sc = SCANNER;
@@ -47,8 +55,8 @@ public class Application {
           break;
         case 2:
           System.out.print("Enter bank card no. you want to search: ");
-          String card_no = sc.next();
-          var found = getSubscriptionByCardNumber(card_no).orElseThrow(
+          String cardNumber = sc.next();
+          var found = getSubscriptionByCardNumber(cardNumber).orElseThrow(
               () -> new SubscriptionNotFoundException("Subscription not found"));
 
           showSubscriptionDetails(found);
@@ -56,8 +64,8 @@ public class Application {
 
         case 3:
           System.out.print("Enter Bank Card no. : ");
-          card_no = sc.next();
-          subscribeBankCard(card_no);
+          cardNumber = sc.next();
+          subscribeBankCard(cardNumber);
           break;
         case 4:
           getUsers();
@@ -79,8 +87,8 @@ public class Application {
     var bankCard = CARDS.stream()
         .filter(card -> card.getNumber().equals(card_no))
         .findFirst().orElseThrow(() -> new IllegalArgumentException("Unknown card"));
-    var service = new ServiceImpl();
-    service.subscribe(bankCard);
+    //var service = new ServiceImpl();
+    SERVICE.subscribe(bankCard);
     System.out.println("Subscription was successfully created!");
   }
 
@@ -89,9 +97,9 @@ public class Application {
   }
 
   private static Optional<Subscription> getSubscriptionByCardNumber(String cardNumber) {
-    var service = new ServiceImpl();
+    //var service = new ServiceImpl();
     //return service.getSubscriptionByBankCardNumber(cardNumber);
-    return service.getAllSubscriptionByCondition(getPredicateWithEqualsCardNumber(cardNumber)).stream().findFirst();
+    return SERVICE.getAllSubscriptionByCondition(getPredicateWithEqualsCardNumber(cardNumber)).stream().findFirst();
   }
 
   private static Predicate<Subscription> getPredicateWithEqualsCardNumber(String cardNumber) {
@@ -116,10 +124,10 @@ public class Application {
     } else {
       throw new IllegalArgumentException("Unknown bank card type");
     }
-    var bank = new BankImpl();
+    //var bank = new BankImpl();
     var user = new User(name, surname, LocalDate.parse(birthday));
     USERS.add(user);
-    var result = bank.createBankCard(user, type);
+    var result = BANK.createBankCard(user, type);
     CARDS.add(result);
     System.out.println("You successfully created new " + type.name() + " bank card. \nYour card no. " + result.getNumber());
   }
