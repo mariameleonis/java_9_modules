@@ -1,7 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e0f7050b-3d97-46c6-a10b-91ffebff183a" name="Changes" comment="" />
+    <list default="true" id="e0f7050b-3d97-46c6-a10b-91ffebff183a" name="Changes" comment="small fixes">
+      <change afterPath="$PROJECT_DIR$/jmp-application/src/com/banking/app/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmp-application/src/com/banking/app/SubscriptionNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmp-application/src/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmp-bank-api/src/com/banking/api/BankInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmp-bank-api/src/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmp-cloud-bank-impl/src/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmp-cloud-service-impl/src/com/banking/service/impl/ServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmp-cloud-service-impl/src/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmp-dto/src/com/banking/dto/BankCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmp-dto/src/com/banking/dto/BankCardInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmp-dto/src/com/banking/dto/BankCardType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmp-dto/src/com/banking/dto/CreditBankCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmp-dto/src/com/banking/dto/DebitBankCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmp-dto/src/com/banking/dto/Subscription.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmp-dto/src/com/banking/dto/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmp-dto/src/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmp-service-api/src/com/banking/service/ServiceInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmp-service-api/src/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bank.api.module/bank.api.module.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bank.api.module/src/com/baeldung/modules/banking/bank/BankInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bank.api.module/src/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking.app/banking.app.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking.app/src/com/baeldung/modules/banking/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking.app/src/com/baeldung/modules/banking/SubscriptionNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking.app/src/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud.service.module/cloud.service.module.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud.service.module/src/com/baeldung/modules/banking/cloud/service/ServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud.service.module/src/com/baeldung/modules/banking/cloud/service/service.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud.service.module/src/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dto.module/dto.module.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dto.module/src/com/baeldung/modules/banking/dto/BankCard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dto.module/src/com/baeldung/modules/banking/dto/BankCardType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dto.module/src/com/baeldung/modules/banking/dto/CreditBankCard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dto.module/src/com/baeldung/modules/banking/dto/DebitBankCard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dto.module/src/com/baeldung/modules/banking/dto/Subscription.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dto.module/src/com/baeldung/modules/banking/dto/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dto.module/src/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello.modules/hello.modules.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello.modules/src/com.baeldung.modules.hello/HelloModules.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello.modules/src/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl.bank/impl.bank.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl.bank/src/com/baeldung/modules/banking/bank/impl/BankImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/jmp-cloud-bank-impl/src/com/banking/api/impl/BankImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impl.bank/src/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.app/main.app.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.app/src/com/baeldung/modules/banking/main/MainApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.app/src/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service.api.module/service.api.module.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service.api.module/src/com/baeldung/modules/banking/service/ServiceInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service.api.module/src/module-info.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,8 +62,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -32,6 +84,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-11&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
@@ -48,7 +101,7 @@
       <recent name="C:\Users\Mariya_Russakova\modules-project\hello.modules" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Application">
+  <component name="RunManager" selected="Application.com.banking.app.Application">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.baeldung.modules.banking.Application" />
       <module name="banking.app" />
@@ -75,8 +128,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.banking.app.Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.banking.app.Application" />
+      <module name="banking.app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.banking.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.banking.app.Application" />
         <item itemvalue="Application.Application" />
         <item itemvalue="Application.MainApp" />
       </list>
@@ -92,8 +159,24 @@
       <updated>1670775797092</updated>
       <workItem from="1670775798366" duration="3437000" />
       <workItem from="1670779550359" duration="7841000" />
-      <workItem from="1670790748978" duration="334000" />
+      <workItem from="1670790748978" duration="10829000" />
+      <workItem from="1671000077252" duration="3853000" />
     </task>
+    <task id="LOCAL-00001" summary="small fixes">
+      <created>1670791394934</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670791394934</updated>
+    </task>
+    <task id="LOCAL-00002" summary="small fixes">
+      <created>1670793707207</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670793707207</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,5 +192,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="small fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="small fixes" />
   </component>
 </project>
